@@ -5,8 +5,11 @@ import com.lusa.budrio.repository.EventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class EventoController {
+
     @Autowired
     EventoRepository eventoRepository;
 
@@ -19,4 +22,7 @@ public class EventoController {
     Evento getEventoById(@PathVariable Long id) {
         return eventoRepository.findById(id).get();
     }
+
+    @GetMapping("/eventi")
+    List<Evento> getEventiImportanti() { return eventoRepository.getEventiImportanti(); }
 }

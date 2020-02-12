@@ -6,38 +6,31 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 @Entity
-@Table(name = "evento")
+@Table(name = "messaggio")
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Evento {
+public class Messaggio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false)
     private Long id;
 
-    private String nome;
+    @Column(name = "testo", nullable = false)
+    private String testo;
 
+    @Column(name = "data", nullable = false)
     private Date data;
 
+    @Column(name = "ora", nullable = false)
     private Date ora;
-
-    private String descrizione;
-
-    private String luogo;
-
-    private Float costo;
 
     @ManyToOne
     @JoinColumn(name="utenteId")
     private Utente utente;
 
     @ManyToOne
-    @JoinColumn(name="sezioneId")
-    private Sezione sezione;
-
-    @OneToMany(mappedBy = "evento")
-    private List<Messaggio> messaggi;
+    @JoinColumn(name="eventoId")
+    private Evento evento;
 }

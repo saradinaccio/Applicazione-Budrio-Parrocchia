@@ -1,37 +1,40 @@
 package com.lusa.budrio.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name="UTENTE")
-@Getter
-@Setter
+@Table(name = "utente")
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Utente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", updatable = false)
     private Long id;
 
+    @Column(name = "nome", nullable = false)
     private String nome;
 
+    @Column(name = "cognome", nullable = false)
     private String cognome;
 
+    @Column(name = "email", nullable = false)
     private String email;
 
+    @Column(name = "password", nullable = false)
     private String password;
 
     @OneToMany(mappedBy = "utente")
     private List<Evento> eventi;
 
-    public Utente(String nome, String cognome, String email, String password, List<Evento> eventi) {
-        this.nome = nome;
-        this.cognome = cognome;
-        this.email = email;
-        this.password = password;
-        this.eventi = eventi;
-    }
+    @OneToMany(mappedBy = "utente")
+    private List<Messaggio> messaggi;
+
+    @OneToMany(mappedBy = "utente")
+    private List<Notizia> notizie;
 }
