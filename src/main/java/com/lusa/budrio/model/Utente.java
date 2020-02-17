@@ -14,7 +14,7 @@ import java.util.List;
 public class Utente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", updatable = false)
+    @Column(name = "id", updatable = false, unique = true, nullable = false)
     private Long id;
 
     @Column(name = "nome", nullable = false)
@@ -23,7 +23,7 @@ public class Utente implements Serializable {
     @Column(name = "cognome", nullable = false)
     private String cognome;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
     @Column(name = "password", nullable = false)
@@ -37,4 +37,13 @@ public class Utente implements Serializable {
 
     @OneToMany(mappedBy = "utente")
     private List<Notizia> notizie;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+                name = "utente_ruolo",
+                joinColumns = @JoinColumn(
+                        name = "utenteId", referencedColumnName = "id"),
+                inverseJoinColumns = @JoinColumn(
+                        name = "ruoloId", referencedColumnName = "id"))
+    private List<Ruolo> ruoli;
 }

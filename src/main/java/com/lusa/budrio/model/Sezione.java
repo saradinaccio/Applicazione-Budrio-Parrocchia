@@ -14,10 +14,10 @@ public class Sezione {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", updatable = false)
+    @Column(name = "id", updatable = false, unique = true, nullable = false)
     private Long id;
 
-    @Column(name = "nome", nullable = false)
+    @Column(name = "nome", nullable = false, unique = true)
     private String nome;
 
     @OneToMany(mappedBy = "sezione")
