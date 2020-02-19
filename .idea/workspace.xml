@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86da985f-874a-4e6f-9a49-b8550e049eed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/InvalidPasswordException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/controller/EventoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/controller/EventoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Messaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Messaggio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Privilegio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Privilegio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Ruolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Ruolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sezione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sezione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Utente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/EventoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/EventoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,22 +20,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Risposta.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/UtenteService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-              <folding>
-                <element signature="e#311#319#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sezione.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/UtenteServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="429">
+              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectAlreadyExistException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="7" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/SessioneService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/SessioneImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="92" lean-forward="true" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,24 +72,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/Applicazione.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Ruolo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+            <state relative-caret-position="75">
+              <caret line="5" column="69" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,24 +93,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/EventoRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sessione.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#45#1" expanded="true" />
-                <element signature="e#0#46#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Evento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+            <state relative-caret-position="229">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,46 +105,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Messaggio.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/InvalidPasswordException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/SessioneRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Privilegio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Utente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+            <state relative-caret-position="150">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +143,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/Applicazione.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/SezioneRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/MessaggioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/NotiziaRepository.java" />
@@ -188,20 +158,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Messaggio.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sezione.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/RuoloRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/UtenteAlreadyExistException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectAlreadyExistException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/SessioneRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/SessioneService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sessione.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/InvalidPasswordException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/SessioneImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/UtenteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/UtenteServiceImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="-164" />
-    <option name="width" value="1441" />
-    <option name="height" value="809" />
+    <option name="x" value="50" />
+    <option name="y" value="51" />
+    <option name="width" value="1340" />
+    <option name="height" value="752" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,6 +234,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="budrio" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="budrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Applicazione-Budrio-Parrocchia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="budrio" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,6 +259,25 @@
               <item name="Applicazione-Budrio-Parrocchia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="budrio" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="budrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Applicazione-Budrio-Parrocchia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="budrio" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="budrio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Applicazione-Budrio-Parrocchia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -274,7 +285,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,18 +327,21 @@
       <workItem from="1581878666194" duration="125000" />
       <workItem from="1581878819759" duration="57000" />
       <workItem from="1581878904821" duration="2670000" />
-      <workItem from="1581936678403" duration="2130000" />
+      <workItem from="1581936678403" duration="2218000" />
+      <workItem from="1582053691066" duration="3052000" />
+      <workItem from="1582137935314" duration="3454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17387000" />
+    <option name="totallyTimeSpent" value="23981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-209" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.28061768" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.28826895" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -346,7 +359,7 @@
       <window_info anchor="bottom" id="Docker" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32746115" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32681563" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -365,27 +378,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/SezioneRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="71" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -406,16 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/controller/EventoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -448,18 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/EventoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#45#1" expanded="true" />
-            <element signature="e#0#46#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Risposta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -529,6 +493,147 @@
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/EventoService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/EventoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/controller/EventoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="196" column="22" selection-start-line="196" selection-start-column="22" selection-end-line="196" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/RuoloRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Notizia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/SessioneRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/repository/UtenteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="69" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/SessioneService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/model/Sessione.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectAlreadyExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="7" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/ObjectNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/error/InvalidPasswordException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/SessioneImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="92" lean-forward="true" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/UtenteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lusa/budrio/service/impl/UtenteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
           </folding>
         </state>
       </provider>
