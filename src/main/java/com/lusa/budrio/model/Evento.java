@@ -40,4 +40,5 @@ public class Evento {
 
     @OneToMany(mappedBy = "evento")
     private List<Messaggio> messaggi;
+
 }

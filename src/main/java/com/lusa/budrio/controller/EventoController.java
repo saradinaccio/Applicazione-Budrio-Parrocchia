@@ -1,7 +1,6 @@
 package com.lusa.budrio.controller;
 
 import com.lusa.budrio.model.Evento;
-import com.lusa.budrio.model.Risposta;
 import com.lusa.budrio.repository.EventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -12,9 +11,8 @@ import java.util.List;
 @RestController
 public class EventoController {
 
-    @Autowired
-    EventoRepository eventoRepository;
 
+    /*
     @PostMapping("/eventi")
     public Risposta createEvento(@RequestBody Evento nuovoEvento) {
         eventoRepository.save(nuovoEvento);
@@ -78,4 +76,6 @@ public class EventoController {
         risposta.setData(eventi);
         return risposta;
     }
+    */
+
 }

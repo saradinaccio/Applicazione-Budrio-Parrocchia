@@ -9,9 +9,5 @@ import java.util.List;
 
 public interface EventoRepository extends JpaRepository<Evento, Long> {
 
-    @Query("select e from Evento e where :sezione is null")
-    List<Evento> getEventiImportanti(Sort sort);
 
-    @Query("select e from Evento e where e.sezione.Id = ?2")
-    List<Evento> getEventiBySezione(Sort sort, Long sezioneId);
 }

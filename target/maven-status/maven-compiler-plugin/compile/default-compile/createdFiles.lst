@@ -1,0 +1,7 @@
+com/lusa/budrio/error/ObjectAlreadyExistException.class
+com/lusa/budrio/Applicazione.class
+com/lusa/budrio/model/Evento.class
+com/lusa/budrio/error/ObjectNotFoundException.class
+com/lusa/budrio/error/InvalidPasswordException.class
+com/lusa/budrio/repository/EventoRepository.class
+com/lusa/budrio/controller/EventoController.class

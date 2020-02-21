@@ -22,8 +22,7 @@ public class Sessione {
 
     private String token;
 
-    @OneToOne(targetEntity = Utente.class, fetch = FetchType.EAGER)
-    @JoinColumn(nullable = false, name = "utenteId", foreignKey = @ForeignKey(name = "FK_VERIFICA_UTENTE"))
+    @OneToOne(mappedBy = "sessione")
     private Utente utente;
 
     private Date dataScadenza;
@@ -40,6 +39,7 @@ public class Sessione {
         final Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(new Date().getTime());
         cal.add(Calendar.MINUTE, dataScadenzaInMinuti);
+
         return new Date(cal.getTime().getTime());
     }
 

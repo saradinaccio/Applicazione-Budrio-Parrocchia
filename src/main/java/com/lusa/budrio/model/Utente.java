@@ -32,18 +32,26 @@ public class Utente implements Serializable {
     @OneToMany(mappedBy = "utente")
     private List<Evento> eventi;
 
+    /*
     @OneToMany(mappedBy = "utente")
     private List<Messaggio> messaggi;
 
     @OneToMany(mappedBy = "utente")
     private List<Notizia> notizie;
+    */
+
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-                name = "utente_ruolo",
-                joinColumns = @JoinColumn(
-                        name = "utenteId", referencedColumnName = "id"),
-                inverseJoinColumns = @JoinColumn(
-                        name = "ruoloId", referencedColumnName = "id"))
+            name = "utente_ruolo",
+            joinColumns = @JoinColumn(
+                    name = "utenteId", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "ruoloId", referencedColumnName = "id"))
     private List<Ruolo> ruoli;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "sessioneId", referencedColumnName = "id")
+    private Sessione sessione;
 }
+
