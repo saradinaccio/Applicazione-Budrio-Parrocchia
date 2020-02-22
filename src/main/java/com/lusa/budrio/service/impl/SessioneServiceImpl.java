@@ -8,9 +8,13 @@ import com.lusa.budrio.repository.SessioneRepository;
 import com.lusa.budrio.repository.UtenteRepository;
 import com.lusa.budrio.service.SessioneService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
+@Service
+@Transactional
 public class SessioneServiceImpl implements SessioneService {
 
     @Autowired
@@ -26,6 +30,7 @@ public class SessioneServiceImpl implements SessioneService {
         if(utente != null) {
             if(utente.getPassword().equals(password)) {
                 Sessione sessione = new Sessione(UUID.randomUUID().toString(), utente);
+                System.out.println(sessione);
                 sessioneRepository.save(sessione);
 
                 return sessione;

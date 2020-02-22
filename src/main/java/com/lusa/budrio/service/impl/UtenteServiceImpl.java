@@ -8,9 +8,13 @@ import com.lusa.budrio.repository.SessioneRepository;
 import com.lusa.budrio.repository.UtenteRepository;
 import com.lusa.budrio.service.UtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 
+@Service
+@Transactional
 public class UtenteServiceImpl implements UtenteService {
 
     @Autowired
@@ -28,7 +32,7 @@ public class UtenteServiceImpl implements UtenteService {
             throw new ObjectAlreadyExistException("E' presente un account con questo indirizzo email: " + utente.getEmail());
         }
         else {
-            utente.setRuoli(Arrays.asList(ruoloRepository.findByName("RUOLO_UTENTE")));
+            utente.setRuoli(Arrays.asList(ruoloRepository.findByNome("RUOLO_UTENTE")));
             return utenteRepository.save(utente);
         }
     }

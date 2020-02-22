@@ -5,13 +5,13 @@ import com.lusa.budrio.model.Risposta;
 import com.lusa.budrio.model.Sessione;
 import com.lusa.budrio.model.Utente;
 import com.lusa.budrio.service.SessioneService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UtenteController {
 
+    @Autowired
     SessioneService sessioneService;
 
     @PostMapping("/login")
@@ -37,5 +37,13 @@ public class UtenteController {
             risposta.setMessaggio("Login fallito!");
             return risposta;
         }
+    }
+
+    @GetMapping("/{token}/logout")
+    public Risposta logout(@PathVariable String token) {
+        Risposta risposta = new Risposta(true, "Logout avvenuto con successo!");
+        sessioneService.logout(token);
+
+        return risposta;
     }
 }

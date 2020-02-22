@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RuoloRepository extends JpaRepository<Ruolo, Long> {
 
-    Ruolo findByName(String nome);
+    Ruolo findByNome(String nome);
 }
