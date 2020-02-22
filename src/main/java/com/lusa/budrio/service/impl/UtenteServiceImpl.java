@@ -29,7 +29,7 @@ public class UtenteServiceImpl implements UtenteService {
     @Override
     public Utente createUtente(Utente utente) {
         if(emailExists(utente.getEmail())) {
-            throw new ObjectAlreadyExistException("E' presente un account con questo indirizzo email: " + utente.getEmail());
+            return null;
         }
         else {
             utente.setRuoli(Arrays.asList(ruoloRepository.findByNome("RUOLO_UTENTE")));

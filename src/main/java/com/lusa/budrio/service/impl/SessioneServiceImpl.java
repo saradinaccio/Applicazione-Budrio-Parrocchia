@@ -27,19 +27,14 @@ public class SessioneServiceImpl implements SessioneService {
     public Sessione login(String email, String password) {
         Utente utente = utenteRepository.findByEmail(email);
 
-        if(utente != null) {
-            if(utente.getPassword().equals(password)) {
-                Sessione sessione = new Sessione(UUID.randomUUID().toString(), utente);
-                System.out.println(sessione);
-                sessioneRepository.save(sessione);
+        if(utente != null && utente.getPassword().equals(password)) {
+            Sessione sessione = new Sessione(UUID.randomUUID().toString(), utente);
 
-                return sessione;
-            }
-            else {
-                throw new InvalidPasswordException();
-            }
+            sessioneRepository.save(sessione);
+
+            return sessione;
         }
-        throw new ObjectNotFoundException("Non è stato trovato nessun utente con questo indirizzo email: " + email);
+        return null;
     }
 
     @Override
