@@ -22,7 +22,8 @@ public class Sessione {
 
     private String token;
 
-    @OneToOne(mappedBy = "sessione")
+    @ManyToOne
+    @JoinColumn(name = "utenteId", nullable = false)
     private Utente utente;
 
     private Date dataScadenza;
