@@ -1,5 +1,7 @@
 package com.lusa.budrio.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,8 +22,11 @@ public class Evento {
 
     private String nome;
 
+    @Temporal(TemporalType.DATE)
     private Date data;
 
+    @JsonFormat(pattern = "HH:mm")
+    @Temporal(TemporalType.TIME)
     private Date ora;
 
     private String descrizione;
@@ -30,15 +35,17 @@ public class Evento {
 
     private Float costo;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name="utenteId")
     private Utente utente;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name="sezioneId")
     private Sezione sezione;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "evento")
     private List<Messaggio> messaggi;
-
 }
