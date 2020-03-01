@@ -30,7 +30,7 @@ public class SezioneController {
         }
         else {
             risposta.setRisultato(false);
-            risposta.setMessaggio("Recupero sezioni fallito! Non risulti essere loggatp.");
+            risposta.setMessaggio("Recupero sezioni fallito! Non risulti essere loggato.");
         }
         return risposta;
     }
